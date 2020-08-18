@@ -1,7 +1,7 @@
 ###### Mirska-s-Unfinished-Open-Source-Dungeon
 
 ## What is MUD?
-Mirska's Unfinished Dungeon is a top down game made in the Godot Engine for the [Miz game jam] (https://itch.io/jam/miz-jam-1) and had gone through several rewrites and troubles while creating it, due to the 48 hour deadline I couldn't finish on time as the game broke completely just two hours before the deadline and I haven't even finished the soundtrack/sound effects for it yet.
+Mirska's Unfinished Dungeon is a top down game made in the Godot Engine for the [Miz game jam](https://itch.io/jam/miz-jam-1) and had gone through several rewrites and troubles while creating it, due to the 48 hour deadline I couldn't finish on time as the game broke completely just two hours before the deadline and I haven't even finished the soundtrack/sound effects for it yet.
 
 ## Why is it open source?
 Because I don't want it to be shelved like most projects I work on, especially since this game was considered "finished" with 20 levels before Godot broke the dialouge system completely.
