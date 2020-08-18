@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://src/scenes/Enemies/Enemy.tscn" type="PackedScene" id=1]
+
+[node name="Wizard-BEasy" instance=ExtResource( 1 )]
+damage = 50.0
+projectilespeed = 15.0
+IsRanaged = true
+protype = 1
+
+[node name="Sprite" parent="." index="0"]
+region_enabled = true
+region_rect = Rect2( 480, 15, 15, 16 )

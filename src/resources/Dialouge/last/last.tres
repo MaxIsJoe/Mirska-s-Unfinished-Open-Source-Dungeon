@@ -1,0 +1,26 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://src/scripts/DialougeClass.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+Strings = [ "[center] [color=#F46A4E] 
+Ah, you survived all that", "[center] [color=#F46A4E]
+well, I'm glad that you survived", "[center] [color=#F46A4E] Because now you'll know true pain", "[center] [color=#F46A4E] Brace yourself! for our battle will be long and hard!", "[center] [color=#E69F31]
+Yeah, that ain't happening.", "[center] [color=#F46A4E]
+Wha- Who are you??", "[center] [color=#E69F31]
+Name's \"the creato\"r, and looks like we ran out of time.", "[center] [color=#F46A4E]
+Time? what do you mean?", "[center] [color=#E69F31]
+Well it means that almost 45 hours have passed and I still haven't finished 80% of the game.", "[center] [color=#E69F31]
+And I haven't even worked on a main or pause menu yet", "[center] [color=#E69F31]
+To be honset, I spent way too much time fixing and rewriting everything so I couldn't finish your boss fights and the 6 other levels.", "[center] [color=#F46A4E]
+W-What?
+What does that mean?
+What are you talking about?", "[center] [color=#E69F31]
+I think this will make you understand", "[center] [color=#E69F31]
+Here kiddo, OP weapons to finish this unfinished mess quickly", "[center] [color=#F46A4E]
+NO!" ]
+Names = [  ]
+Functions = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3 ]
+HasChoice = false
+ChoicesPath = ""

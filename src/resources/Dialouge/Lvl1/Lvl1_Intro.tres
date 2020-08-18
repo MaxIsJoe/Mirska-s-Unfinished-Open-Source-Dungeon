@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://src/scripts/DialougeClass.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+Strings = [ "[center] [color=#F46A4E] You made it, now your adventure to retrieve your life back has begun.", "[center] [color=#F46A4E] I left some tips for you on how to use your new powers as a ghost", "[center] [color=#F46A4E] And if you feel like you are confused about something, just press F1 on your keyboard to open up the manual." ]
+Names = [  ]
+Functions = [ 0, 0, 0 ]
+HasChoice = false
+ChoicesPath = ""

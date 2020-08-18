@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://src/scripts/DialougeClass.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+Strings = [ "[center]Okie Dokie!", "[center]Since you're still new to this whole human to ghost thingy, allow me to explain the controls.", "[center]To move, use W A S D or the arrow keys", "[center]Annd.. now you're a professional at moving!", "[center]I'll race you to that building up ahead!~" ]
+Names = [  ]
+Functions = [ "", "", "", "", "Move Mirska:1" ]
+HasChoice = false
+ChoicesPath = ""

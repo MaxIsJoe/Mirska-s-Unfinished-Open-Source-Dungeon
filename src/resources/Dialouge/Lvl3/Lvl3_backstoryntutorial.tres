@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://src/scripts/DialougeClass.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+Strings = [ "[center] [color=#F46A4E] I'll explain the last important thing about you then you're on you're own until we meet again", "[center] [color=#F46A4E] You died while having a bet with your best friend", "[center] [color=#F46A4E] You might not remember this but you died trying to prove that you can endure anything that she threw at you", "[center] [color=#F46A4E] You were right, and you were enjoying it", "[center] [color=#F46A4E] However, not wanting to lose, she pushed things a bit far and now you're dead", "[center] [color=#F46A4E] Not the stupidest I have seen around here.. But still stupid.", "[center] [color=#F46A4E] However your endurance can be useful here", "[center] [color=#F46A4E] Ghosts can transform into humans within these walls as long as they suffer", "[center] [color=#F46A4E] You can go back to your human form anytime by absorbing as much damage as you can", "[center] [color=#F46A4E] In your human form you lose all your ghostly powers but you can open holy doors and solve some puzzles.", "[center] [color=#F46A4E] Just note that you can't leave a level if you are in your human form", "[center] [color=#F46A4E] To fix this, look for a gong. it will heal you and turn you back into a ghost", "[center] [color=#F46A4E] Oh and one more thing, you enjoy pain but pain fades away after time.", "[center] [color=#F46A4E] When you get out of your ghost form I know you are Imune to damage for a couple of seconds because the rush of pain.", "[center] [color=#F46A4E] Try not to get yourself killed when that happens, focus on what you're doing.", "[center] [color=#F46A4E] Anywas, that's all.
+
+Seeya up ahead." ]
+Names = [  ]
+Functions = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+HasChoice = false
+ChoicesPath = ""

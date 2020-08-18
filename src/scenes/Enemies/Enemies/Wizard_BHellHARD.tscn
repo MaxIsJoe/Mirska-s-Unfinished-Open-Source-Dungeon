@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/scenes/Enemies/Enemy.tscn" type="PackedScene" id=1]
+
+[sub_resource type="StreamTexture" id=1]
+load_path = "res://.import/monochrome_transparent_packed.png-c682b9369c45008b48311de2a366c9c8.stex"
+
+[node name="Wizard_BHellHARD" instance=ExtResource( 1 )]
+health = 50.0
+damage = 55.0
+attackspeed = 0.3
+IsRanaged = true
+protype = 2
+
+[node name="Sprite" parent="." index="0"]
+texture = SubResource( 1 )
+region_enabled = true
+region_rect = Rect2( 384, 0, 15, 15 )

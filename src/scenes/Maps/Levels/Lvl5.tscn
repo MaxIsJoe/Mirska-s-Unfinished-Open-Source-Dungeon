@@ -1,0 +1,89 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://src/scenes/Enemies/Enemies/Wizard-BEasy.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/scenes/Maps/Walls.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/scenes/Enemies/Enemies/Wizard_BHellHARD.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/scenes/Enemies/Enemies/Wizard-Range.tscn" type="PackedScene" id=4]
+[ext_resource path="res://src/scenes/Player/Player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://src/scenes/Items/Weapons/Dagger_OneUse.tscn" type="PackedScene" id=6]
+[ext_resource path="res://src/scenes/Items/Weapons/GREATSWORD.tscn" type="PackedScene" id=7]
+[ext_resource path="res://src/scenes/Items/Enviorement/Alter.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/scenes/Items/Weapons/Lvl1Sword.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/scenes/Maps/Levels/Lvl5.gd" type="Script" id=10]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 92, 72 )
+
+[node name="Lvl5" type="Node2D"]
+script = ExtResource( 10 )
+
+[node name="Walls" parent="." instance=ExtResource( 2 )]
+tile_data = PoolIntArray( -1376262, 23, 0, -1441786, 23, 0, -1310726, 23, 0, -1376250, 23, 0, -1245190, 23, 0, -1310714, 23, 0, -1179654, 23, 0, -1245178, 23, 0, -1114118, 23, 0, -1179642, 23, 0, -1048582, 23, 0, -1114106, 23, 0, -983046, 23, 0, -1048570, 23, 0, -917510, 23, 0, -983034, 23, 0, -851974, 23, 0, -917498, 23, 0, -786438, 23, 0, -851962, 23, 0, -720902, 23, 0, -786426, 23, 0, -655366, 23, 0, -720890, 23, 0, -589830, 23, 0, -655354, 23, 0, -524294, 23, 0, -524293, 2, 0, -524292, 2, 0, -524291, 2, 0, -524290, 2, 0, -524289, 2, 0, -589824, 2, 0, -589823, 2, 0, -589822, 2, 0, -589821, 2, 0, -589820, 2, 0, -589819, 2, 0, -589818, 23, 0, -458758, 23, 0, -524282, 23, 0, -393222, 23, 0, -458746, 23, 0, -327686, 23, 0, -393210, 23, 0, -262150, 23, 0, -327674, 23, 0, -196614, 23, 0, -262138, 23, 0, -131078, 23, 0, -196602, 23, 0, -65542, 23, 0, -131066, 23, 0, -6, 23, 0, -65530, 23, 0, 65515, 28, 0, 65516, 21, 0, 65517, 21, 0, 65518, 21, 0, 65519, 21, 0, 65520, 21, 0, 65521, 21, 0, 65522, 21, 0, 65523, 21, 0, 65524, 21, 0, 65525, 21, 0, 65526, 21, 0, 65527, 21, 0, 65528, 21, 0, 65529, 21, 0, 6, 21, 0, 7, 21, 0, 8, 21, 0, 9, 21, 0, 10, 21, 0, 11, 21, 0, 12, 21, 0, 13, 21, 0, 14, 21, 0, 15, 21, 0, 16, 21, 0, 17, 21, 0, 18, 21, 0, 19, 21, 0, 20, 21, 0, 21, 21, 0, 22, 21, 0, 23, 21, 0, 24, 21, 0, 25, 21, 0, 26, 21, 0, 27, 21, 0, 28, 21, 0, 29, 21, 0, 30, 21, 0, 31, 22, 0, 131051, 23, 0, 65567, 27, 0, 196587, 23, 0, 131103, 27, 0, 262123, 23, 0, 196639, 27, 0, 327659, 23, 0, 262175, 27, 0, 393195, 23, 0, 327711, 27, 0, 458731, 23, 0, 393247, 27, 0, 524267, 23, 0, 458783, 27, 0, 589803, 23, 0, 524319, 27, 0, 655339, 23, 0, 589855, 27, 0, 720875, 23, 0, 655391, 27, 0, 786411, 23, 0, 720927, 27, 0, 851947, 23, 0, 786463, 27, 0, 917483, 23, 0, 851999, 27, 0, 983019, 23, 0, 917535, 27, 0, 1048555, 23, 0, 983071, 27, 0, 1114091, 23, 0, 1048607, 27, 0, 1179627, 23, 0, 1114143, 27, 0, 1245163, 23, 0, 1179679, 27, 0, 1310699, 23, 0, 1245215, 27, 0, 1376235, 23, 0, 1310751, 27, 0, 1441771, 23, 0, 1376287, 27, 0, 1507307, 23, 0, 1441823, 27, 0, 1572843, 27, 0, 1507359, 27, 0, 1638379, 27, 0, 1638380, 25, 0, 1638381, 25, 0, 1638382, 25, 0, 1638383, 25, 0, 1638384, 25, 0, 1638385, 25, 0, 1638386, 25, 0, 1638387, 25, 0, 1638388, 25, 0, 1638389, 25, 0, 1638390, 25, 0, 1638391, 25, 0, 1638392, 25, 0, 1638393, 25, 0, 1638394, 25, 0, 1638395, 25, 0, 1638396, 25, 0, 1638397, 25, 0, 1638398, 25, 0, 1638399, 25, 0, 1572864, 25, 0, 1572865, 25, 0, 1572866, 25, 0, 1572895, 27, 0, 1703915, 27, 0, 1638431, 27, 0, 1769451, 27, 0, 1703967, 27, 0, 1834987, 23, 0, 1769503, 27, 0, 1900523, 23, 0, 1835039, 27, 0, 1966059, 23, 0, 1900575, 27, 0, 2031595, 23, 0, 1966111, 27, 0, 2097131, 23, 0, 2031647, 27, 0, 2162667, 23, 0, 2097183, 27, 0, 2228203, 23, 0, 2162719, 27, 0, 2293739, 23, 0, 2228255, 27, 0, 2359275, 23, 0, 2293791, 27, 0, 2424811, 23, 0, 2359327, 27, 0, 2490347, 23, 0, 2424863, 27, 0, 2555883, 23, 0, 2490399, 27, 0, 2621419, 24, 0, 2621420, 25, 0, 2621421, 25, 0, 2621422, 25, 0, 2621423, 25, 0, 2621424, 25, 0, 2621425, 25, 0, 2621426, 25, 0, 2621427, 25, 0, 2621428, 25, 0, 2621429, 25, 0, 2621430, 25, 0, 2621431, 25, 0, 2621432, 25, 0, 2621433, 25, 0, 2621434, 25, 0, 2621435, 25, 0, 2555908, 25, 0, 2555909, 25, 0, 2555910, 25, 0, 2555911, 25, 0, 2555912, 25, 0, 2555913, 25, 0, 2555914, 25, 0, 2555915, 25, 0, 2555916, 25, 0, 2555917, 25, 0, 2555918, 25, 0, 2555919, 25, 0, 2555920, 25, 0, 2555921, 25, 0, 2555922, 25, 0, 2555923, 25, 0, 2555924, 25, 0, 2555925, 25, 0, 2555926, 25, 0, 2555927, 25, 0, 2555928, 25, 0, 2555929, 25, 0, 2555930, 25, 0, 2555931, 25, 0, 2555932, 25, 0, 2555933, 25, 0, 2555934, 25, 0, 2555935, 26, 0, 2686971, 23, 0, 2621444, 27, 0, 2752507, 23, 0, 2686980, 27, 0, 2818043, 23, 0, 2752516, 27, 0, 2883579, 23, 0, 2818052, 27, 0, 2949115, 23, 0, 2883588, 27, 0, 3014651, 23, 0, 2949124, 27, 0, 3080187, 23, 0, 3014660, 27, 0, 3145723, 23, 0, 3080196, 27, 0, 3211259, 23, 0, 3145732, 27, 0, 3276795, 23, 0, 3211268, 27, 0, 3342331, 23, 0, 3276804, 27, 0, 3407867, 23, 0, 3342340, 27, 0, 3473403, 23, 0, 3407876, 27, 0, 3538939, 23, 0, 3473412, 27, 0, 3604475, 23, 0, 3538948, 27, 0, 3670011, 23, 0, 3604484, 27, 0, 3735547, 23, 0, 3670020, 27, 0, 3801083, 23, 0, 3735556, 27, 0, 3866619, 23, 0, 3801092, 27, 0, 3932155, 23, 0, 3866628, 27, 0, 3997691, 23, 0, 3932164, 27, 0, 4063227, 27, 0, 3997700, 23, 0, 4128763, 27, 0, 4063236, 23, 0, 4194299, 27, 0, 4128772, 23, 0, 4259835, 27, 0, 4194308, 23, 0, 4325371, 27, 0, 4259844, 23, 0, 4390907, 27, 0, 4325380, 23, 0, 4456443, 27, 0, 4390916, 23, 0, 4521979, 27, 0, 4456452, 23, 0, 4587515, 27, 0, 4521988, 23, 0, 4653051, 27, 0, 4587524, 23, 0, 4718587, 27, 0, 4653060, 23, 0, 4784123, 27, 0, 4718596, 23, 0, 4849659, 27, 0, 4784132, 23, 0, 4915195, 27, 0, 4849668, 23, 0, 4980731, 27, 0, 4915204, 23, 0, 5046267, 27, 0, 4980740, 23, 0, 5111803, 27, 0, 5046276, 23, 0, 5177339, 27, 0, 5111812, 23, 0, 5242875, 27, 0, 5177348, 23, 0, 5308411, 27, 0, 5242884, 23, 0, 5373947, 27, 0, 5308420, 23, 0, 5439483, 27, 0, 5373956, 23, 0, 5373957, 23, 0, 5505019, 27, 0 )
+
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="Wizard-Range" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 80, 348 )
+
+[node name="Wizard-Range5" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( -124, 468 )
+
+[node name="Wizard-Range4" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 292, 52 )
+lootondead = true
+Loot = ExtResource( 8 )
+
+[node name="Wizard-Range2" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 252, 604 )
+lootondead = true
+Loot = ExtResource( 8 )
+
+[node name="Wizard-Range3" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( -212, 556 )
+
+[node name="Wizard-BEasy" parent="Enemies" instance=ExtResource( 1 )]
+position = Vector2( 4, 192 )
+lootondead = true
+Loot = ExtResource( 6 )
+
+[node name="Wizard-BEasy2" parent="Enemies" instance=ExtResource( 1 )]
+position = Vector2( 156, 112 )
+lootondead = true
+Loot = ExtResource( 6 )
+
+[node name="Wizard-BEasy3" parent="Enemies" instance=ExtResource( 1 )]
+position = Vector2( 252, 284 )
+lootondead = true
+Loot = ExtResource( 6 )
+
+[node name="Wizard-BEasy4" parent="Enemies" instance=ExtResource( 1 )]
+position = Vector2( -160, 152 )
+
+[node name="Wizard-BEasy5" parent="Enemies" instance=ExtResource( 1 )]
+position = Vector2( 356, 392 )
+
+[node name="Wizard-BEasy6" parent="Enemies" instance=ExtResource( 1 )]
+position = Vector2( 400, 152 )
+
+[node name="Wizard-BEasy7" parent="Enemies" instance=ExtResource( 1 )]
+position = Vector2( 104, 536 )
+lootondead = true
+Loot = ExtResource( 9 )
+
+[node name="Wizard-BEasy8" parent="Enemies" instance=ExtResource( 1 )]
+position = Vector2( -52, 504 )
+lootondead = true
+Loot = ExtResource( 7 )
+
+[node name="Wizard_BHellHARD" parent="Enemies" instance=ExtResource( 3 )]
+position = Vector2( 0, 824 )
+
+[node name="Player" parent="." instance=ExtResource( 5 )]
+position = Vector2( 0, -100 )
+
+[node name="Exit" type="Area2D" parent="."]
+position = Vector2( 0, 980 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Exit"]
+shape = SubResource( 1 )
+[connection signal="body_entered" from="Exit" to="." method="_on_Exit_body_entered"]

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://src/scripts/DialougeClass.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+Strings = [ "[center] [color=#E69F31] Level 1 Sword, Destroyed.  ", "[center] [color=#F46A4E] Uh-oh, you just went through an invisble magic field.", "[center] [color=#F46A4E] Your weapon was destroyed, but don't worry. the next part is simple. ", "[center] [color=#F46A4E] The undead are stupid unlike you, they will attack each other on accident. ", "[center] [color=#F46A4E] When you don't have a weapon try luring your enemy to a wizard. But be careful! ", "[center] [color=#F46A4E] Wizards do  LOOOOOOOOOOOOOOOOOTS OF DAMAGE ", "[center] [color=#F46A4E] And some of them can curse you as well ", "[center] [color=#F46A4E] Anyways, I thought it would be better for me to explain this in person because it might seem confusing at first. That is all. " ]
+Names = [  ]
+Functions = [ 0, 0, 0, 0, 0, 0, 0, 0 ]
+HasChoice = false
+ChoicesPath = ""

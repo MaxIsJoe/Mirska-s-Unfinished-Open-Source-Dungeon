@@ -1,0 +1,227 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://src/scenes/Maps/Walls.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/scenes/Enemies/Enemies/Goblin.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/scenes/Enemies/Enemies/Wizard-BEasy.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/scenes/Enemies/Enemies/Wizard-Range.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/art/monochrome_transparent_packed.png" type="Texture" id=5]
+[ext_resource path="res://src/scenes/Maps/Levels/Lvl2_Key.gd" type="Script" id=6]
+[ext_resource path="res://assets/fonts/Kenney Pixel.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://src/scenes/Player/Player.tscn" type="PackedScene" id=8]
+[ext_resource path="res://src/scenes/Items/Weapons/Dagger_OneUse.tscn" type="PackedScene" id=9]
+[ext_resource path="res://src/scenes/Items/Weapons/Lvl1Sword.tscn" type="PackedScene" id=10]
+[ext_resource path="res://src/scenes/Items/Enviorement/DetectWeapon.tscn" type="PackedScene" id=11]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 7 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 64, 10 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 24, 16 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+[node name="Lvl2_Key" type="Node2D"]
+script = ExtResource( 6 )
+
+[node name="Dagger_OneUse" parent="." instance=ExtResource( 9 )]
+position = Vector2( 816, -288 )
+
+[node name="Tip1" type="Label" parent="."]
+margin_left = 688.0
+margin_top = -384.0
+margin_right = 795.0
+margin_bottom = -368.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.717647, 0.282353, 0.282353, 1 )
+text = "Drop weapon here"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tip2" type="Label" parent="."]
+margin_left = 808.0
+margin_top = -352.0
+margin_right = 915.0
+margin_bottom = -325.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.717647, 0.282353, 0.282353, 1 )
+text = "Q or NUMPAD 0 to drop"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Map" type="Node2D" parent="."]
+
+[node name="Walls" parent="Map" instance=ExtResource( 1 )]
+tile_data = PoolIntArray( -2818015, 32, 0, -2818014, 33, 0, -2818013, 33, 0, -2818012, 33, 0, -2818011, 33, 0, -2818010, 33, 0, -2818009, 33, 0, -2818008, 33, 0, -2818007, 33, 0, -2818006, 33, 0, -2818005, 33, 0, -2818004, 33, 0, -2818003, 33, 0, -2818002, 33, 0, -2818001, 33, 0, -2818000, 33, 0, -2817999, 33, 0, -2817998, 33, 0, -2817997, 33, 0, -2817996, 33, 0, -2817995, 33, 0, -2817994, 33, 0, -2817993, 33, 0, -2817992, 33, 0, -2817991, 33, 0, -2817990, 33, 0, -2817989, 33, 0, -2817988, 34, 0, -2752479, 39, 0, -2752452, 35, 0, -2686943, 39, 0, -2686916, 35, 0, -2621407, 39, 0, -2621380, 35, 0, -2555871, 39, 0, -2555844, 35, 0, -2490335, 39, 0, -2490308, 35, 0, -2424799, 39, 0, -2424772, 35, 0, -2359263, 39, 0, -2359236, 35, 0, -2293727, 39, 0, -2293700, 35, 0, -2228191, 39, 0, -2228164, 35, 0, -2162655, 39, 0, -2162628, 35, 0, -2097119, 39, 0, -2097092, 35, 0, -2031583, 38, 0, -2031582, 37, 0, -2031581, 37, 0, -2031580, 37, 0, -2031579, 37, 0, -2031578, 37, 0, -2031577, 37, 0, -2031576, 37, 0, -2031575, 37, 0, -2031566, 37, 0, -2031565, 37, 0, -2031564, 37, 0, -2031563, 37, 0, -2031562, 37, 0, -2031561, 37, 0, -2031560, 37, 0, -2031559, 37, 0, -2031558, 37, 0, -2031557, 37, 0, -2031556, 36, 0, -1966038, 39, 0, -1966031, 35, 0, -1900502, 39, 0, -1900495, 35, 0, -1834966, 39, 0, -1834959, 35, 0, -1769430, 39, 0, -1769423, 35, 0, -1703894, 39, 0, -1703887, 35, 0, -1638358, 39, 0, -1638351, 35, 0, -1572822, 39, 0, -1572815, 35, 0, -1507286, 39, 0, -1507279, 35, 0, -1441750, 39, 0, -1441743, 35, 0, -1376214, 39, 0, -1376207, 35, 0, -1310696, 32, 0, -1310695, 33, 0, -1310694, 33, 0, -1310693, 33, 0, -1310692, 33, 0, -1310691, 33, 0, -1310690, 33, 0, -1310689, 33, 0, -1310688, 33, 0, -1310687, 33, 0, -1310686, 33, 0, -1310685, 33, 0, -1310684, 33, 0, -1310683, 33, 0, -1310682, 33, 0, -1310681, 33, 0, -1310680, 33, 0, -1310679, 33, 0, -1310678, 33, 0, -1310671, 33, 0, -1310670, 33, 0, -1310669, 33, 0, -1310668, 33, 0, -1310667, 33, 0, -1310666, 33, 0, -1310665, 33, 0, -1310664, 33, 0, -1310663, 33, 0, -1310662, 33, 0, -1310661, 33, 0, -1310660, 33, 0, -1310659, 33, 0, -1310658, 33, 0, -1310657, 33, 0, -1310656, 33, 0, -1310655, 33, 0, -1310654, 33, 0, -1310653, 33, 0, -1310652, 33, 0, -1310651, 33, 0, -1310650, 33, 0, -1310649, 33, 0, -1310648, 34, 0, -1245160, 39, 0, -1245112, 35, 0, -1179624, 39, 0, -1179576, 35, 0, -1114088, 39, 0, -1114040, 35, 0, -1048552, 39, 0, -1048504, 35, 0, -983016, 39, 0, -982968, 35, 0, -917480, 39, 0, -917432, 35, 0, -851944, 39, 0, -851896, 35, 0, -786408, 39, 0, -786360, 35, 0, -720872, 39, 0, -720824, 35, 0, -655336, 39, 0, -655288, 35, 0, -655264, 32, 0, -655263, 33, 0, -655262, 33, 0, -655261, 33, 0, -655260, 33, 0, -655259, 33, 0, -655258, 33, 0, -655257, 33, 0, -655256, 33, 0, -655255, 33, 0, -655254, 33, 0, -655253, 33, 0, -655252, 33, 0, -655251, 33, 0, -655250, 33, 0, -655249, 33, 0, -655248, 33, 0, -655247, 33, 0, -655246, 33, 0, -655245, 33, 0, -655244, 33, 0, -655243, 33, 0, -655242, 33, 0, -655241, 33, 0, -655240, 33, 0, -655239, 33, 0, -655238, 33, 0, -655237, 33, 0, -655236, 33, 0, -655235, 34, 0, -589800, 39, 0, -589752, 35, 0, -589728, 39, 0, -589699, 35, 0, -524264, 39, 0, -524216, 35, 0, -524192, 39, 0, -524163, 35, 0, -458728, 39, 0, -458680, 35, 0, -458656, 39, 0, -458627, 35, 0, -327685, 32, 0, -327684, 33, 0, -327683, 33, 0, -327682, 33, 0, -327681, 33, 0, -393216, 33, 0, -393215, 33, 0, -393214, 33, 0, -393213, 33, 0, -393212, 33, 0, -393211, 33, 0, -393210, 33, 0, -393209, 33, 0, -393208, 33, 0, -393207, 33, 0, -393206, 33, 0, -393205, 33, 0, -393204, 33, 0, -393203, 33, 0, -393202, 33, 0, -393201, 33, 0, -393200, 33, 0, -393199, 33, 0, -393198, 33, 0, -393197, 33, 0, -393196, 33, 0, -393195, 33, 0, -393194, 33, 0, -393193, 33, 0, -393144, 35, 0, -393120, 39, 0, -393091, 35, 0, -262149, 39, 0, -327608, 35, 0, -327584, 39, 0, -327555, 35, 0, -196613, 39, 0, -262072, 35, 0, -262048, 39, 0, -262019, 35, 0, -131077, 39, 0, -196535, 33, 0, -196534, 33, 0, -196533, 33, 0, -196532, 33, 0, -196531, 33, 0, -196530, 33, 0, -196529, 33, 0, -196528, 33, 0, -196527, 33, 0, -196526, 33, 0, -196525, 33, 0, -196524, 33, 0, -196523, 33, 0, -196522, 33, 0, -196521, 33, 0, -196520, 33, 0, -196519, 33, 0, -196518, 33, 0, -196517, 33, 0, -196516, 33, 0, -196515, 33, 0, -196514, 33, 0, -196513, 33, 0, -196483, 35, 0, -65541, 39, 0, -130947, 35, 0, -5, 39, 0, -65411, 35, 0, 65531, 39, 0, 125, 35, 0, 131067, 39, 0, 65661, 35, 0, 196603, 39, 0, 131197, 35, 0, 262139, 38, 0, 262140, 37, 0, 262141, 37, 0, 262142, 37, 0, 262143, 37, 0, 196608, 37, 0, 196609, 37, 0, 196610, 37, 0, 196611, 37, 0, 196612, 37, 0, 196613, 37, 0, 196614, 37, 0, 196615, 37, 0, 196616, 37, 0, 196617, 37, 0, 196618, 37, 0, 196619, 37, 0, 196620, 37, 0, 196621, 37, 0, 196622, 37, 0, 196623, 37, 0, 196624, 37, 0, 196625, 37, 0, 196626, 37, 0, 196627, 37, 0, 196628, 37, 0, 196629, 37, 0, 196630, 37, 0, 196631, 37, 0, 196680, 35, 0, 196681, 33, 0, 196682, 33, 0, 196683, 33, 0, 196684, 33, 0, 196685, 33, 0, 196686, 33, 0, 196687, 33, 0, 196688, 33, 0, 196689, 33, 0, 196690, 33, 0, 196696, 33, 0, 196697, 33, 0, 196698, 33, 0, 196699, 33, 0, 196700, 33, 0, 196701, 33, 0, 196702, 33, 0, 196703, 33, 0, 196733, 35, 0, 262168, 39, 0, 262216, 35, 0, 262227, 39, 0, 262231, 35, 0, 262240, 39, 0, 262269, 35, 0, 327704, 39, 0, 327752, 35, 0, 327763, 39, 0, 327767, 35, 0, 327776, 39, 0, 327805, 35, 0, 393240, 39, 0, 393288, 35, 0, 393299, 39, 0, 393303, 35, 0, 393312, 39, 0, 393341, 35, 0, 458776, 39, 0, 458824, 35, 0, 458835, 39, 0, 458839, 35, 0, 458848, 39, 0, 458877, 35, 0, 524312, 39, 0, 524360, 35, 0, 524371, 39, 0, 524375, 35, 0, 524384, 38, 0, 524385, 37, 0, 524386, 37, 0, 524387, 37, 0, 524388, 37, 0, 524389, 37, 0, 524390, 37, 0, 524391, 37, 0, 524392, 37, 0, 524393, 37, 0, 524394, 37, 0, 524395, 37, 0, 524400, 37, 0, 524401, 37, 0, 524402, 37, 0, 524403, 37, 0, 524404, 37, 0, 524405, 37, 0, 524406, 37, 0, 524407, 37, 0, 524408, 37, 0, 524409, 37, 0, 524410, 37, 0, 524411, 37, 0, 524412, 37, 0, 524413, 36, 0, 589848, 39, 0, 589896, 35, 0, 589907, 39, 0, 589911, 35, 0, 589932, 39, 0, 589935, 35, 0, 655384, 39, 0, 655432, 35, 0, 655442, 32, 0, 655448, 34, 0, 655468, 39, 0, 655471, 35, 0, 720920, 39, 0, 720968, 35, 0, 720978, 39, 0, 720984, 35, 0, 721004, 39, 0, 721007, 35, 0, 786456, 39, 0, 786504, 35, 0, 786514, 39, 0, 786520, 35, 0, 786540, 39, 0, 786543, 35, 0, 851992, 39, 0, 852040, 35, 0, 852050, 39, 0, 852056, 35, 0, 917528, 39, 0, 917576, 35, 0, 917586, 39, 0, 917592, 35, 0, 983064, 39, 0, 983112, 35, 0, 983122, 38, 0, 983123, 37, 0, 983124, 37, 0, 983125, 37, 0, 983126, 37, 0, 983127, 37, 0, 983128, 36, 0, 1048600, 39, 0, 1048648, 35, 0, 1114136, 39, 0, 1114184, 35, 0, 1179672, 39, 0, 1179720, 35, 0, 1245208, 39, 0, 1245256, 35, 0, 1310744, 39, 0, 1310792, 35, 0, 1376280, 39, 0, 1376328, 35, 0, 1441816, 39, 0, 1441864, 35, 0, 1507352, 38, 0, 1507353, 37, 0, 1507354, 37, 0, 1507355, 37, 0, 1507356, 37, 0, 1507357, 37, 0, 1507358, 37, 0, 1507359, 37, 0, 1507360, 37, 0, 1507361, 37, 0, 1507362, 37, 0, 1507363, 37, 0, 1507364, 37, 0, 1507365, 37, 0, 1507366, 37, 0, 1507367, 37, 0, 1507368, 37, 0, 1507369, 37, 0, 1507370, 37, 0, 1507371, 37, 0, 1507372, 37, 0, 1507373, 37, 0, 1507374, 37, 0, 1507375, 37, 0, 1507376, 37, 0, 1507377, 37, 0, 1507378, 37, 0, 1507379, 37, 0, 1507380, 37, 0, 1507381, 37, 0, 1507382, 37, 0, 1507383, 37, 0, 1507384, 37, 0, 1507385, 37, 0, 1507386, 37, 0, 1507387, 37, 0, 1507388, 37, 0, 1507389, 37, 0, 1507390, 37, 0, 1507391, 37, 0, 1507392, 37, 0, 1507393, 37, 0, 1507394, 37, 0, 1507395, 37, 0, 1507396, 37, 0, 1507397, 37, 0, 1507398, 37, 0, 1507399, 37, 0, 1507400, 36, 0 )
+
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="Wizard-BEasy" parent="Enemies" instance=ExtResource( 3 )]
+position = Vector2( 1536, 8 )
+
+[node name="Wizard-BEasy2" parent="Enemies" instance=ExtResource( 3 )]
+position = Vector2( 1504, -24 )
+
+[node name="Wizard-BEasy3" parent="Enemies" instance=ExtResource( 3 )]
+position = Vector2( 1560, 40 )
+
+[node name="Wizard-Range" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 1760, 128 )
+
+[node name="Wizard-Range2" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 1680, -8 )
+
+[node name="Wizard-Range3" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 1616, -104 )
+
+[node name="Wizard-Range4" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 1840, 8 )
+
+[node name="Wizard-Range5" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 1888, 88 )
+
+[node name="Wizard-Range6" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 1832, -104 )
+
+[node name="Wizard-Range7" parent="Enemies" instance=ExtResource( 4 )]
+position = Vector2( 736, -568 )
+attackspeed = 0.7
+lootondead = true
+Loot = ExtResource( 10 )
+
+[node name="Goblin" parent="Enemies" instance=ExtResource( 2 )]
+position = Vector2( 1112, 32 )
+
+[node name="Goblin2" parent="Enemies" instance=ExtResource( 2 )]
+position = Vector2( 944, 248 )
+
+[node name="Goblin3" parent="Enemies" instance=ExtResource( 2 )]
+position = Vector2( 1000, -32 )
+
+[node name="Door" type="KinematicBody2D" parent="."]
+position = Vector2( 736, -320 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door"]
+shape = SubResource( 2 )
+
+[node name="MoveCollison" type="Node2D" parent="Door"]
+position = Vector2( -128, -48 )
+
+[node name="Door1" type="Sprite" parent="Door"]
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 80, 64, 15, 15 )
+
+[node name="Door2" type="Sprite" parent="Door"]
+position = Vector2( -16, 0 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 80, 64, 15, 15 )
+
+[node name="Door3" type="Sprite" parent="Door"]
+position = Vector2( -32, 0 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 80, 64, 15, 15 )
+
+[node name="Door4" type="Sprite" parent="Door"]
+position = Vector2( 16, 0 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 80, 64, 15, 15 )
+
+[node name="Door5" type="Sprite" parent="Door"]
+position = Vector2( 32, 0 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 80, 64, 15, 15 )
+
+[node name="Door6" type="Sprite" parent="Door"]
+position = Vector2( 48, 0 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 80, 64, 15, 15 )
+
+[node name="Door7" type="Sprite" parent="Door"]
+position = Vector2( -48, 0 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 80, 64, 15, 15 )
+
+[node name="OgPos" type="Position2D" parent="Door"]
+
+[node name="Door2" type="KinematicBody2D" parent="."]
+position = Vector2( 1768, 144 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door2"]
+shape = SubResource( 2 )
+
+[node name="MoveCollison" type="Node2D" parent="Door2"]
+position = Vector2( -128, -48 )
+
+[node name="Door1" type="Sprite" parent="Door2"]
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 80, 64, 15, 15 )
+
+[node name="Door2" type="Sprite" parent="Door2"]
+position = Vector2( -16, 0 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 80, 64, 15, 15 )
+
+[node name="Door3" type="Sprite" parent="Door2"]
+position = Vector2( -32, 0 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 80, 64, 15, 15 )
+
+[node name="Door4" type="Sprite" parent="Door2"]
+position = Vector2( 16, 0 )
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 80, 64, 15, 15 )
+
+[node name="DetectWeapon" parent="." instance=ExtResource( 11 )]
+
+[node name="Exit" type="Area2D" parent="."]
+position = Vector2( 1760, 176 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Exit"]
+shape = SubResource( 3 )
+
+[node name="Player" parent="." instance=ExtResource( 8 )]
+
+[node name="Key1" type="Area2D" parent="."]
+position = Vector2( 736, -616 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Key1"]
+shape = SubResource( 4 )
+
+[node name="KeySprite" type="Sprite" parent="Key1"]
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 512, 176, 15, 15 )
+
+[node name="Key2" type="Area2D" parent="."]
+position = Vector2( 1368, 208 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Key2"]
+shape = SubResource( 4 )
+
+[node name="KeySprite" type="Sprite" parent="Key2"]
+texture = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 512, 176, 15, 15 )
+[connection signal="area_entered" from="DetectWeapon" to="." method="_on_DetectWeapon_area_entered"]
+[connection signal="body_entered" from="Exit" to="." method="_on_Exit_body_entered"]
+[connection signal="mouse_entered" from="Key1" to="." method="_on_Key1_mouse_entered"]
+[connection signal="mouse_entered" from="Key2" to="." method="_on_Key2_mouse_entered"]

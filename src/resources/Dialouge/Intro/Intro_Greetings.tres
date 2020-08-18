@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://src/scripts/DialougeClass.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+Strings = [ "[center] Oh, you're finally awake! [/center]", "[center] Well.. Technically the ghosts can't wake up so I guess the correct word would be summoned?", "[center] Woah hold on! don't panic! You may be dead but you still have a chance to go back to the boring life of the living mortals.", "[center] ..And you definetly don't want to panic here unless you want to go back to where you were created.", "[center] So, Take  deep breaths and then I can guide you through this", "[center] [color=#E69F31] Would you like to go through the tutorial? [/color][/center]" ]
+Names = [  ]
+Functions = [ "Empty:0", "", "", "", "", "Empty:0" ]
+HasChoice = true
+ChoicesPath = "res://src/resources/Dialouge/Intro/Intro_TutorialChoice.tres"

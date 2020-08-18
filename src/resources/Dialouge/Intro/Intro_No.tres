@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://src/scripts/DialougeClass.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+Strings = [ "Sorry but I can't let you skip just yet", "This is your first time playing right?", "Also... That level is still kinda...", "...Not finished yet", "But don't worry! it will be finished by the time you finish the tutorial. so seeya up ahead!" ]
+Names = [  ]
+Functions = [ 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+HasChoice = false
+ChoicesPath = ""

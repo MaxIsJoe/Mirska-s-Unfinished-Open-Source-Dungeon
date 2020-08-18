@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://src/scripts/DialougeClass.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+Strings = [ "HUMAN", "THIS IS TEXT", "FOR TESTING", "DO YOU UNDERSTAND? MONKEY BRAIN?" ]
+Names = [  ]
+Functions = [ "", "", "", "" ]
+HasChoice = true
+ChoicesPath = "res://src/resources/Dialouge/Debug/notest1.tres"

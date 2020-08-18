@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://src/scripts/DialougeClass.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+Strings = [ "[center] [color=#F46A4E] Okay, see that big crowd of wizards and goblins there?", "[center] [color=#F46A4E] You don't want to jump right in without a weapon", "[center] [color=#F46A4E] ...Annnd the door to the exist is locked by two keys..", "[center] [color=#F46A4E] Find the two keys and a weapon", "[center] [color=#F46A4E] But be careful, there isn't an unlimated supply of weapons here.", "[center] [color=#F46A4E] Watch where you're pointing your weapon at." ]
+Names = [  ]
+Functions = [ 0, 0, 0, 0, 0, 0 ]
+HasChoice = false
+ChoicesPath = ""

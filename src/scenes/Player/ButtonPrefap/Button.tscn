@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/scenes/Player/ButtonPrefap/Button.gd" type="Script" id=1]
+[ext_resource path="res://src/themes/Button.tres" type="Theme" id=2]
+
+[node name="Butt" type="Button" groups=[
+"DiaButtons",
+]]
+margin_right = 180.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 90, 30 )
+theme = ExtResource( 2 )
+text = "b"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="InitilizeButton" from="." to="." method="_on_Butt_InitilizeButton"]
+[connection signal="pressed" from="." to="." method="_on_Butt_pressed"]
